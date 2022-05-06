@@ -133,7 +133,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = "static/"
 
 STATICFILES_DIRS = [
-os.path.join(BASE_DIR, "staticfiles"),
+# os.path.join(BASE_DIR, "staticfiles"),
 os.path.join(BASE_DIR, "ui/static/ui")
 ]
 
