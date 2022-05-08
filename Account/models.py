@@ -47,7 +47,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         return self.email
     
 
-
+    
 class Jwt(models.Model):
     user = models.OneToOneField(
         CustomUser, related_name='login_user', on_delete=models.CASCADE
@@ -60,8 +60,6 @@ class Jwt(models.Model):
 
 class BlackListedToken(models.Model):
     refresh = models.TextField()
-
-
 
 class Teacher(models.Model):
     gender = (('male', 'M'),
@@ -93,8 +91,3 @@ class TeachersBankDetails(models.Model):
     bank_acount_name = models.CharField(max_length=100)
     bank_name = models.CharField(max_length=20)
     account_number = models.IntegerField()
-
-
-
-
-            

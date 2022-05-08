@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-3z5i)_kmb!qfnj6!6&tt7ce$=usx*_3=^f2h(q__@k!7zz=7k#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://git.heroku.com/stark-springs-60539.git"]
+ALLOWED_HOSTS = ["*", "https://git.heroku.com/stark-springs-60539.git"]
 
 
 # Application definition
